@@ -33,7 +33,7 @@ namespace ClassLibrary
         public Train(string name)
         {
             this.Name = name;
-            CantidadTrenes = 1;
+            CantidadTrenes++;
 
         }
 
