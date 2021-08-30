@@ -37,6 +37,12 @@ namespace ClassLibrary
 
         }
 
+        ~Train()
+        {
+            Console.WriteLine($"RIP {this.Name}");
+            CantidadTrenes--;
+        }
+
         public string Nombre
         {
             get
@@ -57,7 +63,7 @@ namespace ClassLibrary
             }
             set 
             {
-                Count += value;
+                Count = value;
             }
         }
 
