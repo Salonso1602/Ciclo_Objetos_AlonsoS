@@ -49,10 +49,6 @@ namespace ClassLibrary
             {
                 return this.Name;
             }
-            set 
-            {
-                this.Name = value;
-            }
         }
 
         public static int CantidadTrenes
@@ -61,7 +57,7 @@ namespace ClassLibrary
             {
                 return Count;
             }
-            set 
+            private set 
             {
                 Count = value;
             }
