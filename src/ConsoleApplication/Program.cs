@@ -19,11 +19,15 @@ namespace ConsoleApplication
         /// </summary>
         public static void Main()
         {
-            for (int i = 0; i<100; i++)
+           /* for (int i = 0; i<10000000; i++)
             {
                 Train test = new Train($"Tren n°: {i}");
             }
             Console.WriteLine($"{Train.CantidadTrenes}");
         }
+        /// Se generan las 100 instancias de trenes exitosamente, pero al intentar inicializarse 10 millones, esto supera la capacidad de la memoria heap para almacenar objetos
+        /// por lo que se destruyen  para hacer lugar para los nuevos, la cantidad maxima que sobrevivieron en mi caso fueron 9972287 */
+
+        
     }
 }
