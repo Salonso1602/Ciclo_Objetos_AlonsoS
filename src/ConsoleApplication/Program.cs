@@ -19,8 +19,10 @@ namespace ConsoleApplication
         /// </summary>
         public static void Main()
         {
-            var train = new Train("Thomas");
-            train.StartEngines();
+            for (int i = 0; i<100; i++)
+            {
+                Train test = new Train($"Tren n°: {i}");
+            }
             Console.WriteLine($"{Train.CantidadTrenes}");
         }
     }
